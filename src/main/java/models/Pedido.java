@@ -122,7 +122,7 @@ public class Pedido implements Serializable {
      */
     @Override
     public String toString() {
-        return "Pedido{" + "id=" + id + ", fecha=" + fecha + ", precio=" + precio + ", pendiente=" + pendiente + ", recogido=" + recogido + '}';
+        return "Pedido{" + "id=" + id + ", producto["+ producto.getNombre() +"], fecha=" + fecha + ", precio=" + precio + ", pendiente=" + pendiente + ", recogido=" + recogido + '}';
     }
 
 }
