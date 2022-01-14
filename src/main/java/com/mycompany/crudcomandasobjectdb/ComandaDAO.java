@@ -76,12 +76,10 @@ public class ComandaDAO {
             pedido.setPendiente("si");
             pedido.setRecogido("no");
 
-            System.out.println("Ha pedido: " + producto);
-
             em.getTransaction().begin();
             em.persist(pedido);
             em.getTransaction().commit();
-            System.out.println("\nHa realizado el pedido con el producto: " + producto);
+            System.out.println("Ha pedido: " + producto);
 
         } catch (Exception e) {
             System.out.println("\nProducto no existente");
@@ -102,6 +100,7 @@ public class ComandaDAO {
             em.remove(pedido);
             em.getTransaction().commit();
             System.out.println("\nHa eliminado el pedido: " + pedido);
+            
         } catch (Exception e) {
             System.out.println("\nPedido no existente");
             e.printStackTrace();
