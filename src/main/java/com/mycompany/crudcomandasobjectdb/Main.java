@@ -95,7 +95,7 @@ public class Main {
             
             case 7 -> {
                                                 
-                System.out.println("https://github.com/Fortes-dev/CRUDcomandasHibernate.git");
+                System.out.println("https://github.com/Fortes-dev/CRUDcomandasObjectDB.git");
                 System.exit(0);
                 
             }
